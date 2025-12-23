@@ -12,11 +12,11 @@ const floating = {
 };
 
 const pills = [
-  "friendship-first",
-  "100% biased",
-  "soft chaos",
-  "birthday mode",
-  "unhinged love"
+  "summer 2025 dump",
+  "totally (un)biased",
+  "scheming at its finest",
+  "birthday girl",
+  "mom of the group"
 ];
 
 export const Hero = () => {
@@ -58,7 +58,7 @@ export const Hero = () => {
               <span className="block text-honey">Happy Birthday Anjali!! 💕</span>
             </motion.h1>
             <p className="max-w-2xl text-lg text-white/80">
-              A completely unbiased report on friendship, chaos, and love.
+              The best of 2025 from the crisis management team. most iconic plots of the summer.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <button
@@ -74,7 +74,7 @@ export const Hero = () => {
                 </motion.span>
               </button>
               <span className="text-sm text-white/70">
-                Fueled by inside jokes, late-night voice notes, and feral joy.
+                Fueled by endless TEAAA (more to probably come)
               </span>
             </div>
           </div>
@@ -88,7 +88,7 @@ export const Hero = () => {
                 >
                   <div>
                     <p className="text-xs uppercase tracking-[0.2em] text-white/50">Mood</p>
-                    <p className="font-semibold text-white">Overflowing warmth</p>
+                    <p className="font-semibold text-white">Busy scheming</p>
                   </div>
                   <span className="text-2xl">💗</span>
                 </motion.div>
@@ -100,7 +100,7 @@ export const Hero = () => {
                 >
                   <div>
                     <p className="text-xs uppercase tracking-[0.2em] text-white/50">Status</p>
-                    <p className="font-semibold text-white">Friendship Emergency Hotline</p>
+                    <p className="font-semibold text-white">Crisis management team ACTIVE</p>
                   </div>
                   <span className="text-2xl">📞</span>
                 </motion.div>
@@ -111,8 +111,8 @@ export const Hero = () => {
                   className="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3"
                 >
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-white/50">Vibe</p>
-                    <p className="font-semibold text-white">Birthday Mode: ON</p>
+                    <p className="text-xs uppercase tracking-[0.2em] text-white/50">Mode</p>
+                    <p className="font-semibold text-white">ANJALI's BIRTHDAYYYYY!</p>
                   </div>
                   <span className="text-2xl">🎂</span>
                 </motion.div>

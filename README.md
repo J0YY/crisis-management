@@ -57,7 +57,7 @@ If you prefer, swap `npm` for `pnpm` or `yarn`. This repo is frontend-only—no 
 
 - `app/` — App Router entry + layout, global styles.  
 - `components/` — Section components (hero, photos, vibes, moments, superlatives, time/energy, matchmaking nod, love letter, finale, easter eggs).  
-- `data/wrappedData.ts` — Placeholder content to replace.  
+- `data/wrappedData.ts` — Placeholder content to replace (vibes, moments, superlatives, time windows, chat receipts).
 - `public/photos` — Swap with real images.  
 - `public/letters/love-letter.txt` — Replace with the real note.
 

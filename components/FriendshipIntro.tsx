@@ -9,8 +9,8 @@ export const FriendshipIntro = () => {
     <SectionShell
       id="begin"
       kicker="Friendship First"
-      title="This is about you, not just the chat."
-      description="A warm love letter disguised as a report. No metrics can measure how much you mean to us."
+      title="A riddle for the chaos trio."
+      description="Crack it if you’ve ever timed ads, ferried chargers, or whispered “COME NOWWW” outside a theater."
     >
       <motion.div
         initial={reduceMotion ? undefined : { opacity: 0, y: 12 }}
@@ -21,14 +21,15 @@ export const FriendshipIntro = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-br from-flame/10 via-bubble/10 to-honey/10" />
         <p className="relative max-w-3xl text-lg leading-relaxed text-white/85">
-          This isn’t about messages sent or crises survived. It’s about friendship, laughter,
-          and the fact that life is better with you in it. We took every meme, late-night voice
-          note, and feral brainstorm and turned it into this little birthday love capsule.
+          Riddle me this: who texts “once again” until you’re home, prays to the ad gods at 10:25,
+          ferries a Canon charger like it’s state secrets, and can run a whole operation while
+          whispering “no more scheming… probably”? If you answered “us, with you at the center,”
+          you solved it. Prize: this feral birthday dossier.
         </p>
         <div className="mt-6 flex flex-wrap gap-3 text-sm text-white/70">
-          <span className="rounded-full bg-white/5 px-3 py-1">Made with zero chill</span>
-          <span className="rounded-full bg-white/5 px-3 py-1">Data: 100% placeholder, 0% AI scrape</span>
-          <span className="rounded-full bg-white/5 px-3 py-1">Tone: affectionate & silly</span>
+          <span className="rounded-full bg-white/5 px-3 py-1">Clue: “COME NOWWW”</span>
+          <span className="rounded-full bg-white/5 px-3 py-1">Clue: Charger secured</span>
+          <span className="rounded-full bg-white/5 px-3 py-1">Clue: No more scheming (allegedly)</span>
         </div>
       </motion.div>
     </SectionShell>

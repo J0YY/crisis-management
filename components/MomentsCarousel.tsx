@@ -29,8 +29,8 @@ export const MomentsCarousel = () => {
     <SectionShell
       id="moments"
       kicker="Iconic Moments"
-      title="Wrapped-style highlight reel."
-      description="A carousel of chaos, tenderness, and quotes that still make us laugh-cry."
+      title="Let's take a look at 5 of the most random n iconic messages from this summer."
+      description="I'm sure you remember these ;)"
     >
       <div className="relative overflow-hidden rounded-3xl bg-white/5 p-6 sm:p-8">
         <div className="grid gap-6 md:grid-cols-[1.1fr,0.9fr] md:items-center">
@@ -64,8 +64,7 @@ export const MomentsCarousel = () => {
           </div>
           <div className="space-y-4">
             <p className="text-sm text-white/70">
-              Swap the fake quotes and stats with your own highlights in `data/wrappedData.ts`.
-              Keep it affectionate, keep it silly.
+              Most iconic single messages. No context needed.
             </p>
             <div className="flex items-center gap-3">
               <button

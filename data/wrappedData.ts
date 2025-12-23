@@ -34,6 +34,33 @@ export type TimeEnergy = {
   note: string;
 };
 
+export type ChatReceipt = {
+  title: string;
+  summary: string;
+  messages: string[];
+  tag?: string;
+};
+
+export type Mission = {
+  title: string;
+  time: string;
+  detail: string;
+  highlight: string;
+  tag?: string;
+};
+
+export type HotlineMoment = {
+  headline: string;
+  reply: string;
+  tag?: string;
+};
+
+export type Lesson = {
+  title: string;
+  detail: string;
+  emphasis?: string;
+};
+
 export const vibeStats: VibeStat[] = [
   {
     label: "Overall Mood of the Group Chat",
@@ -104,34 +131,34 @@ export const photos: Photo[] = [
 
 export const iconicMoments: Moment[] = [
   {
-    title: "The Crisis Hotline Hours",
-    stat: "Open 24/7, staffed by love",
-    quote: "“Okay, rapid-fire feelings dump. Go.”",
-    tag: "urgent"
-  },
-  {
-    title: "The “Wait…” Messages",
-    stat: "18 voice notes that started with “so… wait”",
-    quote: "“Hear me out — what if we just… moved to a farm?”",
-    tag: "plot-twist"
-  },
-  {
-    title: "Group Chat Therapy Sessions",
-    stat: "Certified by zero professionals, trusted by all",
-    quote: "“We can cry and also order dumplings.”",
-    tag: "soft"
-  },
-  {
-    title: "Absolutely Unnecessary Overthinking",
-    stat: "14 spreadsheets, 0 regrets",
-    quote: "“Do we need a rubric for this? Absolutely.”",
+    title: "2:59 AM Ping",
+    stat: "Late-night alert",
+    quote: "He is in ga So this is 2:59 AM his time",
     tag: "chaos"
   },
   {
-    title: "Moments We Knew Were Iconic",
-    stat: "Documented in all caps within 0.3 seconds",
-    quote: "“This is going in the highlight reel.”",
-    tag: "legendary"
+    title: "Plot Twist Alert",
+    stat: "We did NOT get this update",
+    quote: "WE DID NOT GET THIS UPDATE",
+    tag: "plot"
+  },
+  {
+    title: "Bystander Vibe Check",
+    stat: "Live observations",
+    quote: "that way we could observe and you get a bystander opinion of the vibe",
+    tag: "ops"
+  },
+  {
+    title: "Mission Whiplash",
+    stat: "Rapid status flip",
+    quote: "ANJALI YOU TOLD ME IT WAS GOING BADLY WHEN WE HOT TO THE THEATER",
+    tag: "whiplash"
+  },
+  {
+    title: "Dignity Meter",
+    stat: "On double texts",
+    quote: "if he really was playing games then this is the moment where all his dignity goes down the drain",
+    tag: "callout"
   }
 ];
 
@@ -188,6 +215,170 @@ export const timeEnergy: TimeEnergy[] = [
     label: "Whenever Someone Types “Crisis”",
     value: 100,
     note: "Bat signal activated immediately."
+  }
+];
+
+export const chatReceipts: ChatReceipt[] = [
+  {
+    title: "The What Ifs",
+    summary: "Anjali second guessing her love life.",
+    messages: [
+      "What if he doesnt think its a date",
+      "kill me now",
+      "I lowk wanna skip",
+      "What if i dont go",
+      "i dont wanna go 😭😭😭",
+      "	What if hes playing more games",
+      "And tects me later like",
+      "Oh i missed this"
+    ],
+    tag: "whatifs"
+  },
+  {
+    title: "MOVIE DATE FAIL",
+    summary: "We thought",
+    messages: [
+      "Can u guys draft the message and j tect me",
+      "If the date does not go well pls make sure someone sits bw me and him 🙏🙏",
+      "bro we r foills Im telling u",
+      "COME NOWWW",
+      "first mission completed 🤝🤝🤝 (-soc)",
+      "ANJALI YOU TOLD ME IT WAS GOING BADLY WHEN WE HOT TO THE THEATER (-joy)",
+      "there was NO NEED for us to divide you and this poor man (-joy)",
+      "it was A BIT AKWARD being with ameya during the kiss scenes 😂😂 (-soc)",
+      "👀👀👀👀👀??? (-soc)",
+      "so second date????? (-soc)",
+      "no more scheming?? 😔😔 (-soc)",
+      "No more scheming about my love life seriously"
+    ],
+    tag: "ameyaarc"
+  },
+  {
+    title: "Ameya Arc ++",
+    summary: "We thought we were done with the Ameya arc",
+    messages: [
+      "if you need a place to sleep lmk :) (-ameya)",
+      "OMG YOU ALR GOT HIM (-soc)",
+      "team we need a crisis managed",
+      "I CANT FIND HIM",
+      "Oh jk",
+      "He has another girl in his room",
+      "y si es lesbiana? (-soc)"
+    ],
+    tag: "ops"
+  },
+  {
+    title: "Hotline Highlights",
+    summary: "Crisis management at its finest",
+    messages: [
+      "hi team, got some news 👀👀👀👀 (-soc)",
+      "GUYS PLS COME SAVE ME",
+      "idk if we’re gonna be able to rally after all 😭😭😭 (-joy)",
+      "FUEGO",
+      "Se ha reaccionado con ☺️ a “TE AMO”",
+      "in case u guys wanted to know the current state of events 💀",
+      "omg?? need a storytime (-joy)",
+      "the last convo was him just being down bad and me shutting it down 😭😭😭"
+    ],
+    tag: "debrief"
+  },
+  
+];
+
+export const missions: Mission[] = [
+  {
+    title: "Operation Check-In",
+    time: "Night of",
+    detail:
+      "Everyone texts when home; mutual accountability plus light teasing about early alarms and slow replies.",
+    highlight: "“Both of you text me when ur home!!!”",
+    tag: "safety"
+  },
+  {
+    title: "Boundary Drill at 2:59 AM",
+    time: "Late night",
+    detail:
+      "A rogue notification reopens the case. Solution: no schedule send, respond only when it truly feels right.",
+    highlight: "“either call him rn or leave him on read until monday”",
+    tag: "care"
+  },
+  {
+    title: "Operation Materialists",
+    time: "10:28 PM show",
+    detail:
+      "Dinner + movie plan with friends as buffer; ETA managed with ad math; bystander observations queued.",
+    highlight: "“COME NOWWW they wont let u in otherwise”",
+    tag: "ops"
+  },
+  {
+    title: "Lobby Rally",
+    time: "10:25 PM",
+    detail:
+      "Arrivals staggered, nerves high, friends en route. Group thread keeps the hype up and the plan moving.",
+    highlight: "“on our way though!!! 2 mins”",
+    tag: "support"
+  },
+  {
+    title: "Post-Movie Debrief",
+    time: "Call after",
+    detail:
+      "Full retrospective with laughter, awkward-kiss-scene commentary, and vows to retire the scheming (for now).",
+    highlight: "“no more scheming about my love life seriously”",
+    tag: "debrief"
+  },
+  {
+    title: "Canon Charger Airlift",
+    time: "House cooling",
+    detail:
+      "Locate charger on the right side of the desk, deliver to the event, keep the camera rolling and the night documented.",
+    highlight: "“i gotchu 🫡🫡”",
+    tag: "logistics"
+  }
+];
+
+export const hotlineMoments: HotlineMoment[] = [
+  {
+    headline: "Boundary-Setting Script",
+    reply: "“no more schedule send!! respond to him when it actually occurs to you to do so”",
+    tag: "care"
+  },
+  {
+    headline: "Decision Tree at 5 AM",
+    reply: "“either call him rn or leave him on read until monday”",
+    tag: "tough love"
+  },
+  {
+    headline: "Calming the Spiral",
+    reply: "“treat it as not even a date. just a hangout bw old friends”",
+    tag: "calm"
+  },
+  {
+    headline: "Logistics + Safety",
+    reply: "“once again text me when y’all are home!!!”",
+    tag: "safety"
+  },
+  {
+    headline: "Respect for Peace",
+    reply: "“leave him on read cuz your mental peace is worth way more”",
+    tag: "priority"
+  }
+];
+
+export const lessons: Lesson[] = [
+  {
+    title: "Friendship > Schemes",
+    detail: "We can orchestrate plots, but the heartbeats are the check-ins, late calls, and mutual care.",
+    emphasis: "Every mission started and ended with making sure you were okay."
+  },
+  {
+    title: "Chaos is Cozy Here",
+    detail: "Missed ads, lobby scrambles, and late ETAs still feel safe because we’re in it together.",
+    emphasis: "The crisis line is staffed 24/7 with love."
+  },
+  {
+    title: "You Call, We Answer",
+    detail: "From chargers to late-night calls, we show up. The lore gets funnier; the loyalty stays loud.",
+    emphasis: "“Team we need a crisis managed” is our bat signal."
   }
 ];
 
