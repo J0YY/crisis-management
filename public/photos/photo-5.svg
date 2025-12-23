@@ -1,0 +1,12 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder photo">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0c0b10"/>
+      <stop offset="100%" stop-color="#c5a8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g5)"/>
+  <text x="50%" y="48%" dominant-baseline="middle" text-anchor="middle" font-size="52" font-family="Inter, sans-serif" fill="#fdf6ff" opacity="0.9">Photo Placeholder</text>
+  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-size="26" font-family="Inter, sans-serif" fill="#fdf6ff" opacity="0.75">Cozy couch hang swap-in</text>
+</svg>
+
