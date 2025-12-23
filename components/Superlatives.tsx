@@ -10,7 +10,8 @@ export const Superlatives = () => {
     <SectionShell
       id="superlatives"
       kicker="Friendship Superlatives"
-      title="Everyone wins. Especially you."
+      title="Your Top 5 Superlatives"
+      description="We couldn't have asked for a better friend than you."
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {superlatives.map((item, idx) => (

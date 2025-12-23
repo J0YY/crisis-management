@@ -10,8 +10,8 @@ export const MissionTimeline = () => {
     <SectionShell
       id="missions"
       kicker="Mission Log"
-      title="The Ameya arc, narrated like ops notes."
-      description="Pulls from your texts—swap with real exports in data/wrappedData.ts. Timeline energy over spreadsheets."
+      title="The Ameya arc: boat party ➜ “double” movie ➜ seat buffer ops."
+      description="GA hometown meet at a Stanford boat party, surprise coworker at OpenAI, Joy & Soc accidentally double-date while also newly dating, emergency seat separation during Materialists, debrief of doom, and endless “maybe it still works?” threads."
     >
       <div className="relative space-y-4 border-l border-white/10 pl-6 sm:pl-8">
         <div className="absolute left-0 top-2 h-full border-l border-white/10" aria-hidden />

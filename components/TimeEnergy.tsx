@@ -11,7 +11,7 @@ export const TimeEnergy = () => {
       id="time"
       kicker="Time & Energy Patterns"
       title="We should be asleep, but friendship said otherwise."
-      description="Cozy visuals instead of hard analytics. Replace these with your own beats."
+      description="Crisis management team comes to the rescue."
     >
       <div className="space-y-4 rounded-3xl bg-white/5 p-6">
         {timeEnergy.map((slot, idx) => (

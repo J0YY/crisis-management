@@ -11,8 +11,8 @@ export const PhotoGallery = () => {
     <SectionShell
       id="photos"
       kicker="Photo Memories"
-      title="Tender, blurry, perfect moments."
-      description="Replace /public/photos/* with real images — JPG or PNG. Captions can be edited in data/wrappedData.ts."
+      title="HIGHLIGHTS in pictures."
+      description="The best of summer 2025 in review."
     >
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {photos.map((photo, idx) => (

@@ -86,44 +86,44 @@ export const vibeStats: VibeStat[] = [
 
 export const photos: Photo[] = [
   {
-    src: "/photos/photo-1.svg",
-    alt: "Trio laughing with blurry lights",
-    caption: "We laughed so hard the photo gave up.",
+    src: "/photos/photo-1.jpg",
+    alt: "Escape room + advice gossip sesh",
+    caption: "Escape room + advice gossip sesh",
     accent: "❤️",
     rotate: "-rotate-2"
   },
   {
-    src: "/photos/photo-2.svg",
-    alt: "Late night takeout",
-    caption: "“We should sleep.” — also us: ordering fries.",
+    src: "/photos/photo-2.jpg",
+    alt: "Big sur trip!",
+    caption: "Big sur trip!",
     accent: "✨",
     rotate: "rotate-1"
   },
   {
-    src: "/photos/photo-3.svg",
-    alt: "Sunset selfie",
-    caption: "Golden hour, golden humans.",
+    src: "/photos/photo-3.jpg",
+    alt: "+side eye from anthony",
+    caption: "+side eye from anthony",
     accent: "🌅",
     rotate: "-rotate-1"
   },
   {
-    src: "/photos/photo-4.svg",
-    alt: "Dance floor chaos",
-    caption: "Evidence of rhythm (allegedly).",
+    src: "/photos/photo-4.jpg",
+    alt: "girls brunch :)",
+    caption: "girls brunch :)",
     accent: "🪩",
     rotate: "rotate-2"
   },
   {
-    src: "/photos/photo-5.svg",
-    alt: "Cozy couch hang",
-    caption: "Friendship = blanket burritos + tea.",
+    src: "/photos/photo-5.jpg",
+    alt: "the fated double date",
+    caption: "the fated double date",
     accent: "☕️",
     rotate: "-rotate-3"
   },
   {
-    src: "/photos/photo-6.svg",
-    alt: "Victory pose",
-    caption: "We did it. Not sure what, but we did it.",
+    src: "/photos/photo-6.jpg",
+    alt: "rowchen house party",
+    caption: "rowchen house party",
     accent: "🏆",
     rotate: "rotate-1"
   }
@@ -287,52 +287,44 @@ export const chatReceipts: ChatReceipt[] = [
 
 export const missions: Mission[] = [
   {
-    title: "Operation Check-In",
-    time: "Night of",
+    title: "Scheming Committee Assembled",
+    time: "Day zero",
     detail:
-      "Everyone texts when home; mutual accountability plus light teasing about early alarms and slow replies.",
-    highlight: "“Both of you text me when ur home!!!”",
-    tag: "safety"
+      "Brain trust engaged. Expectations: chaotic but hopeful.",
+    highlight: "“bro we r foills Im telling u”",
+    tag: "plot"
   },
   {
-    title: "Boundary Drill at 2:59 AM",
-    time: "Late night",
+    title: "Materialists Double(ish) Date",
+    time: "Movie night",
     detail:
-      "A rogue notification reopens the case. Solution: no schedule send, respond only when it truly feels right.",
-    highlight: "“either call him rn or leave him on read until monday”",
-    tag: "care"
-  },
-  {
-    title: "Operation Materialists",
-    time: "10:28 PM show",
-    detail:
-      "Dinner + movie plan with friends as buffer; ETA managed with ad math; bystander observations queued.",
-    highlight: "“COME NOWWW they wont let u in otherwise”",
+      "Vibe checks pending.",
+    highlight: "“what if he doesnt think its a date”",
     tag: "ops"
   },
   {
-    title: "Lobby Rally",
-    time: "10:25 PM",
+    title: "Seat Buffer Ops",
+    time: "Showtime",
     detail:
-      "Arrivals staggered, nerves high, friends en route. Group thread keeps the hype up and the plan moving.",
-    highlight: "“on our way though!!! 2 mins”",
+      "Live mission: physically separate seats to reduce awkwardness. Friends deployed as human firewalls.",
+    highlight: "“If the date does not go well pls make sure someone sits bw me and him 🙏🙏”",
     tag: "support"
   },
   {
-    title: "Post-Movie Debrief",
-    time: "Call after",
+    title: "Kiss-Scene Awk Meter",
+    time: "During",
     detail:
-      "Full retrospective with laughter, awkward-kiss-scene commentary, and vows to retire the scheming (for now).",
-    highlight: "“no more scheming about my love life seriously”",
-    tag: "debrief"
+      "Reports from the field: sitting near Ameya during kiss scenes was a choice. Awkwardness logged.",
+    highlight: "“it was A BIT AKWARD being with ameya during the kiss scenes 😂😂”",
+    tag: "field"
   },
   {
-    title: "Canon Charger Airlift",
-    time: "House cooling",
+    title: "Debrief & Shutdown (…ish)",
+    time: "Call after",
     detail:
-      "Locate charger on the right side of the desk, deliver to the event, keep the camera rolling and the night documented.",
-    highlight: "“i gotchu 🫡🫡”",
-    tag: "logistics"
+      "Immediate verdict: nope. Seat buffers, kiss-scene cringe, and vows to cease all missions (subject to relapse).",
+    highlight: "“No more scheming about my love life seriously”",
+    tag: "debrief"
   }
 ];
 
