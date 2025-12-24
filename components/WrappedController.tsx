@@ -141,7 +141,7 @@ export const WrappedController = ({ slides, onComplete }: WrappedControllerProps
   };
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-ink">
+    <div className="fixed inset-0 h-screen w-screen overflow-hidden bg-ink" style={{ height: "100dvh" }}>
       <ProgressBar
         current={currentSlide}
         total={totalSlides}
@@ -163,7 +163,7 @@ export const WrappedController = ({ slides, onComplete }: WrappedControllerProps
               opacity: { duration: 0.3 },
               scale: { duration: 0.3 }
             }}
-            className="absolute inset-0 flex items-center justify-center"
+            className="absolute inset-0"
           >
             {slides[currentSlide]}
           </motion.div>

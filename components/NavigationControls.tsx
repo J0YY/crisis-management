@@ -29,11 +29,11 @@ export const NavigationControls = ({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             onClick={onPrev}
-            className="fixed left-4 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/10 p-3 backdrop-blur-md transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-honey sm:left-8 sm:p-4"
+            className="fixed left-2 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/10 p-2.5 backdrop-blur-md transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-honey sm:left-8 sm:p-4"
             aria-label="Previous slide"
           >
             <svg
-              className="h-6 w-6 text-white sm:h-8 sm:w-8"
+              className="h-5 w-5 text-white sm:h-8 sm:w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -57,11 +57,11 @@ export const NavigationControls = ({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
             onClick={onNext}
-            className="fixed right-4 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/10 p-3 backdrop-blur-md transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-honey sm:right-8 sm:p-4"
+            className="fixed right-2 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/10 p-2.5 backdrop-blur-md transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-honey sm:right-8 sm:p-4"
             aria-label="Next slide"
           >
             <svg
-              className="h-6 w-6 text-white sm:h-8 sm:w-8"
+              className="h-5 w-5 text-white sm:h-8 sm:w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -85,9 +85,10 @@ export const NavigationControls = ({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ delay: 1 }}
-            className="fixed bottom-8 left-1/2 z-40 -translate-x-1/2 text-center text-sm text-white/60"
+            className="pointer-events-none fixed bottom-6 left-1/2 z-40 -translate-x-1/2 px-4 text-center text-xs text-white/60 sm:bottom-8 sm:text-sm"
           >
-            <p>Press → or swipe to continue</p>
+            <p className="hidden sm:block">Press → or swipe to continue</p>
+            <p className="sm:hidden">Swipe to continue</p>
           </motion.div>
         )}
       </AnimatePresence>

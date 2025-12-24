@@ -17,12 +17,22 @@ export const SlideContainer = ({
   return (
     <div
       className={`h-full w-full overflow-y-auto overflow-x-hidden ${
-        centered ? "flex items-center justify-center" : ""
+        centered ? "flex items-start sm:items-center justify-center" : ""
       }`}
+      style={{
+        WebkitOverflowScrolling: "touch",
+        scrollbarWidth: "none",
+        msOverflowStyle: "none"
+      }}
     >
-      <div className={`w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-8 ${className}`}>
+      <div className={`w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-8 ${className}`}>
         {children}
       </div>
+      <style jsx>{`
+        div::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </div>
   );
 };

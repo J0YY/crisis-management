@@ -22,7 +22,7 @@ export const EasterEggs = () => {
       <button
         aria-label="Spawn confetti"
         onClick={fireConfetti}
-        className="fixed bottom-6 right-6 z-40 rounded-full bg-gradient-to-r from-flame to-bubble p-3 text-2xl shadow-glow transition hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-honey"
+        className="fixed bottom-4 right-4 z-40 rounded-full bg-gradient-to-r from-flame to-bubble p-3 text-xl shadow-glow transition active:scale-95 sm:bottom-6 sm:right-6 sm:p-3 sm:text-2xl sm:hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-honey"
       >
         ❤️
       </button>

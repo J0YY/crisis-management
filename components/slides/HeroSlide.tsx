@@ -11,14 +11,14 @@ export const HeroSlide = () => {
         <SequentialReveal delay={0.2} staggerDelay={0.2}>
           <div>
             <motion.h1
-              className="font-display text-4xl leading-tight sm:text-5xl lg:text-6xl text-white"
+              className="font-display text-3xl leading-tight sm:text-5xl lg:text-6xl text-white"
             >
               Happy Birthday
               <motion.span
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.8, type: "spring", stiffness: 200 }}
-                className="block text-6xl sm:text-7xl lg:text-8xl bg-gradient-to-r from-flame via-bubble to-honey bg-clip-text text-transparent"
+                className="block text-5xl sm:text-7xl lg:text-8xl bg-gradient-to-r from-flame via-bubble to-honey bg-clip-text text-transparent"
               >
                 Anjali!!
               </motion.span>

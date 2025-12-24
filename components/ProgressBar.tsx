@@ -13,11 +13,11 @@ export const ProgressBar = ({ current, total, canNavigate, onNavigate }: Progres
   const progress = ((current + 1) / total) * 100;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/50 to-transparent px-4 py-4 backdrop-blur-sm sm:px-8">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
+    <div className="pointer-events-none fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/70 to-transparent px-3 py-3 backdrop-blur-sm sm:px-8 sm:py-4">
+      <div className="pointer-events-auto mx-auto flex max-w-6xl items-center justify-between gap-3 sm:gap-4">
         {/* Progress bar */}
         <div className="flex-1">
-          <div className="relative h-1.5 overflow-hidden rounded-full bg-white/10">
+          <div className="relative h-1 overflow-hidden rounded-full bg-white/10 sm:h-1.5">
             <motion.div
               className="absolute h-full rounded-full bg-gradient-to-r from-flame via-bubble to-honey"
               initial={{ width: 0 }}
@@ -28,7 +28,7 @@ export const ProgressBar = ({ current, total, canNavigate, onNavigate }: Progres
         </div>
 
         {/* Counter */}
-        <div className="flex items-center gap-2 text-sm text-white/80">
+        <div className="flex items-center gap-1.5 text-xs text-white/80 sm:gap-2 sm:text-sm">
           <span className="font-semibold text-white">{current + 1}</span>
           <span>/</span>
           <span>{total}</span>
@@ -40,7 +40,7 @@ export const ProgressBar = ({ current, total, canNavigate, onNavigate }: Progres
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mx-auto mt-3 flex max-w-6xl justify-center gap-2"
+          className="pointer-events-auto mx-auto mt-2 hidden max-w-6xl justify-center gap-2 sm:mt-3 sm:flex"
         >
           {Array.from({ length: total }).map((_, index) => (
             <button

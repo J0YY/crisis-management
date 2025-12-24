@@ -32,7 +32,7 @@ export const IntroSlide = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="space-y-4"
           >
-            <h1 className="font-display text-5xl leading-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="font-display text-4xl leading-tight text-white sm:text-6xl lg:text-7xl">
               Crisis Management
               <span className="block bg-gradient-to-r from-flame via-bubble to-honey bg-clip-text text-transparent">
                 Wrapped 2025
@@ -42,7 +42,7 @@ export const IntroSlide = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="text-xl text-white/80 sm:text-2xl"
+              className="text-lg text-white/80 sm:text-2xl"
             >
               Anjali Edition
             </motion.p>
