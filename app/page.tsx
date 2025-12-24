@@ -1,41 +1,55 @@
 "use client";
 
-import { Hero } from "@/components/Hero";
-import { FriendshipIntro } from "@/components/FriendshipIntro";
-import { PhotoGallery } from "@/components/PhotoGallery";
-import { VibeStats } from "@/components/VibeStats";
-import { MomentsCarousel } from "@/components/MomentsCarousel";
-import { Superlatives } from "@/components/Superlatives";
-import { TimeEnergy } from "@/components/TimeEnergy";
-import { MatchmakingNod } from "@/components/MatchmakingNod";
-import { LoveLetter } from "@/components/LoveLetter";
-import { BirthdayFinale } from "@/components/BirthdayFinale";
+import { useState } from "react";
+import { WrappedController } from "@/components/WrappedController";
+import { LoadingScreen } from "@/components/LoadingScreen";
 import { EasterEggs } from "@/components/EasterEggs";
-import { ChatReceipts } from "@/components/ChatReceipts";
-import { MissionTimeline } from "@/components/MissionTimeline";
-import { HotlineMoments } from "@/components/HotlineMoments";
-import { Lessons } from "@/components/Lessons";
+import { IntroSlide } from "@/components/slides/IntroSlide";
+import { HeroSlide } from "@/components/slides/HeroSlide";
+import { FriendshipIntroSlide } from "@/components/slides/FriendshipIntroSlide";
+import { MomentsCarouselSlide } from "@/components/slides/MomentsCarouselSlide";
+import { PhotoGallerySlide } from "@/components/slides/PhotoGallerySlide";
+import { VibeStatsSlide } from "@/components/slides/VibeStatsSlide";
+import { ChatReceiptsSlide } from "@/components/slides/ChatReceiptsSlide";
+import { MissionTimelineSlide } from "@/components/slides/MissionTimelineSlide";
+import { HotlineMomentsSlide } from "@/components/slides/HotlineMomentsSlide";
+import { TimeEnergySlide } from "@/components/slides/TimeEnergySlide";
+import { SuperlativesSlide } from "@/components/slides/SuperlativesSlide";
+import { MatchmakingNodSlide } from "@/components/slides/MatchmakingNodSlide";
+import { LessonsSlide } from "@/components/slides/LessonsSlide";
+import { LoveLetterSlide } from "@/components/slides/LoveLetterSlide";
+import { FinaleSlide } from "@/components/slides/FinaleSlide";
 
 export default function Page() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const slides = [
+    <IntroSlide key="intro" />,
+    <HeroSlide key="hero" />,
+    <FriendshipIntroSlide key="friendship-intro" />,
+    <MomentsCarouselSlide key="moments" />,
+    <PhotoGallerySlide key="photos" />,
+    <VibeStatsSlide key="vibes" />,
+    <ChatReceiptsSlide key="chats" />,
+    <MissionTimelineSlide key="missions" />,
+    <HotlineMomentsSlide key="hotline" />,
+    <TimeEnergySlide key="time-energy" />,
+    <SuperlativesSlide key="superlatives" />,
+    <MatchmakingNodSlide key="matchmaking" />,
+    <LessonsSlide key="lessons" />,
+    <LoveLetterSlide key="love" />,
+    <FinaleSlide key="finale" />
+  ];
+
   return (
-    <div className="relative min-h-screen overflow-hidden bg-ink text-white">
-      <Hero />
-      <main className="space-y-12">
-        <MomentsCarousel />
-        <FriendshipIntro />
-        <PhotoGallery />
-        <ChatReceipts />
-        <MissionTimeline />
-        <HotlineMoments />
-        <Lessons />
-        <VibeStats />
-        <Superlatives />
-        <TimeEnergy />
-        <MatchmakingNod />
-        <LoveLetter />
-        <BirthdayFinale />
-      </main>
-      <EasterEggs />
+    <div className="relative bg-ink text-white">
+      {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
+      {!isLoading && (
+        <>
+          <WrappedController slides={slides} />
+          <EasterEggs />
+        </>
+      )}
     </div>
   );
 }
