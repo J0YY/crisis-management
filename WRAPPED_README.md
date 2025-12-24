@@ -1,4 +1,4 @@
-# 🎉 Crisis Management Wrapped 2025 - Spotify Wrapped Experience
+# 🎉 Crisis Management Wrapped 2025 - for Anjali ;)
 
 A stunning full-screen, slide-based birthday experience inspired by Spotify Wrapped, featuring incredible animations, sequential reveals, and interactive navigation.
 
